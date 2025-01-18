@@ -8,7 +8,7 @@ require('dotenv').config();
 const { addUsers, getUser, getUsersInRoom, removeUsers } = require('./users')
 
 const PORT = process.env.PORT || 5000;
-const ORIGIN = process.env.ORIGIN || 'http://localhost:3000';
+const ORIGIN = process.env.ORIGIN;
 
 if (!process.env.PORT || !process.env.ORIGIN) {
     console.warn("Environment variables PORT or ORIGIN are missing. Default values are being used.");
